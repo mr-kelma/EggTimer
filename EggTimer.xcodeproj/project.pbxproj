@@ -13,6 +13,7 @@
 		70D4C728284F50A000E8FC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D4C726284F50A000E8FC0A /* Main.storyboard */; };
 		70D4C72A284F50A200E8FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4C729284F50A200E8FC0A /* Assets.xcassets */; };
 		70D4C72D284F50A200E8FC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D4C72B284F50A200E8FC0A /* LaunchScreen.storyboard */; };
+		70D4C736284F516A00E8FC0A /* alarm_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70D4C735284F516A00E8FC0A /* alarm_sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		70D4C729284F50A200E8FC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D4C72C284F50A200E8FC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D4C72E284F50A200E8FC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D4C735284F516A00E8FC0A /* alarm_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_sound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				70D4C729284F50A200E8FC0A /* Assets.xcassets */,
 				70D4C72B284F50A200E8FC0A /* LaunchScreen.storyboard */,
 				70D4C72E284F50A200E8FC0A /* Info.plist */,
+				70D4C734284F516A00E8FC0A /* Sound */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		70D4C734284F516A00E8FC0A /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				70D4C735284F516A00E8FC0A /* alarm_sound.wav */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D4C736284F516A00E8FC0A /* alarm_sound.wav in Resources */,
 				70D4C72D284F50A200E8FC0A /* LaunchScreen.storyboard in Resources */,
 				70D4C72A284F50A200E8FC0A /* Assets.xcassets in Resources */,
 				70D4C728284F50A000E8FC0A /* Main.storyboard in Resources */,
@@ -293,6 +305,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +317,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

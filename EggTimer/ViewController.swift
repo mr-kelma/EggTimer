@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
         titelLabel.text = "Ждём..."
+        
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         //timer creation
@@ -88,16 +89,20 @@ class ViewController: UIViewController {
         } else {
             playAlarm()
             //finish signal
+            
             titelLabel.text = "Яичко готово, можно кушать!"
             //finish label in the top screen
+            
             activityViewSoft.alpha = 0
             activityViewMedium.alpha = 0
             activityViewHard.alpha = 0
             timerView.alpha = 0
             secondsView.alpha = 0
             //invisible activityView
+            
             timer.invalidate()
             //timer zeroing
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 self.titelLabel.text = "Может добавки? Выбирай степень"
                 //new label in the top screen
